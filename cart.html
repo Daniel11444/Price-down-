@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product - PriceDown </title>
+     <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+</head>
+<body>
+
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="./shirts/Untitled-1.jpg" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="#">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Accounts</a></li>
+            </ul>
+        </nav>
+       <img src="OIP (4).jpg" alt="" width="20px" height="20px">
+        <img src="OIP (4).jpg" class="menu-icon" onclick="menutoggle()">
+    </div>
+   </div>
+<!-- --------------------------cart item detail-------------------- -->
+<div class="small-con cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="shirts/OIP (8).jpeg">
+                    <div>
+                        <p>OTF Printed Tshirt</p>
+                        <small>Price: $50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="shirts/OIP (5).jpeg">
+                    <div>
+                        <p>Blue Tshirt</p>
+                        <small>Price: $10.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="shirts/OIP (7).jpeg">
+                    <div>
+                        <p>6link Printed Tshirt</p>
+                        <small>Price: $50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$35.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$230.00</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!---------------------------- footer ------------------------------------>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App For Android And
+                             ios mobile phone.</p>
+                             <div class="app-logo">
+                                <img src="./shirts/Untitled.gif">
+                                <img src="./shirts/R.png">
+                             </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="./shirts/Untitled-1.jpg">
+                        <p>Our Purpose Is To Sustainably Make
+                         The Pleasure and Benefit of Clothing accesories
+                          to the many.</p>
+                    </div>
+                  
+                        <div class="footer-col-3">
+                            <h3>Useful link</h3>
+                            <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>join Affiliate</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Follow us</h3>
+                            <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                            </ul>
+                        </div>
+                </div>
+                <hr>
+                <P class="copyright">Copyright 2020 - Easy Tutorials</P>
+            </div>
+        </div>
+       <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if ( MenuItems.style.maxHeight == "0px") 
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+       </script>
+</body>
+</html>
